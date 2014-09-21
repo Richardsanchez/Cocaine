@@ -35,11 +35,12 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-shadow: none;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -210,4 +211,47 @@ body {
 /* Setup */
 #setup-form {
   text-align: right;
+}
+
+
+/* Dashboard */
+.dashboard-container {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.row {
+  height: 33.33%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.row-1 {
+  border-bottom: 1px solid #c3c3c2;
+}
+.row-2 {
+  border-bottom: 1px solid #c3c3c2;
+}
+.row-3 {
+  
+}
+.card {
+  height: 100%;
+}
+.card:nth-child(odd) {
+  border-right: 1px solid #c3c3c2;
+}
+.card:nth-child(even) {
+}
+#clock {
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 25%;
+  text-shadow: none;
+}
+#weather-card {
+  border-right: 1px solid #c3c3c2;
 }

@@ -1,10 +1,58 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>Dashboard</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
+
+	<!-- load jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.19/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+
+	<script src="js/ng.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript" src="js/restangular.min.js"></script>
+	<script type="text/javascript" src="js/lodash.min.js"></script>
+
+
 </head>
 <body>
-<a href="index.html" class="go-back">Home</a>
-<h1>3:50pm</h1>
+
+
+
+
+<div ng-app="CocaineApp">
+<div class="dashboard-container" ng-controller="CocaineCtrl">
+	<div class="row row-1">
+		<div class="card col-md-3" id="time-card">
+			<p id="clock"></p>
+		</div>
+		<div class="card col-md-3" id="weather-card">
+			<input type="text" ng-model="data.users.roman.data.msg"/>
+			<h1>You said: {{ data.users.roman.data.msg }}</h1>
+		</div>
+		<div class="card col-md-3" id="wealth-card">
+			
+		</div>
+		<div class="card col-md-3" id="events-card">
+			
+		</div>
+	</div>
+	<div class="row row-2">
+		
+	</div>
+	<div class="row row-3">
+		
+	</div>
+</div>
+
+
+	<div ng-controller="WeatherController">
+		
+	</div>
+
+</div>
+
 </body>
 </html>
