@@ -32,21 +32,3 @@ app.controller("CocaineCtrl", function($scope, $firebase) {
 
 // });
 
-
-/* Base url for Cocaine API */
-app.config(function(RestangularProvider) {
-	RestangularProvider.setBaseUrl('https://api.forecast.io');
-});
-
-/* Convert auth_code for access_token */
-app.controller('WeatherController', function($scope, Restangular) {
-
-	var weather_data = Restangular.one('forecast/5c969057cab45a9343c660165ef1624f/33.7550,-84.3900?exclude=[currently,minutely,hourly,daily,alerts,flags,flags]');
-	weather_data.get().then(function(weatherData){
-		//save to firebase
-		console.log("hi");
-		alert("hi");
-	});
-
-});
-
