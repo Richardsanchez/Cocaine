@@ -15,6 +15,8 @@
 	<script type="text/javascript" src="js/restangular.min.js"></script>
 	<script type="text/javascript" src="js/lodash.min.js"></script>
 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.0.2/jquery.simpleWeather.min.js"></script>
+
 
 </head>
 <body>
@@ -31,6 +33,8 @@
 		<div class="card col-md-3" id="weather-card">
 			<input type="text" ng-model="data.users.roman.data.msg"/>
 			<h1>You said: {{ data.users.roman.data.msg }}</h1>
+
+			<div id="weather"></div>
 		</div>
 		<div class="card col-md-3" id="wealth-card">
 			
@@ -47,10 +51,6 @@
 	</div>
 </div>
 
-
-	<div ng-controller="WeatherController">
-		
-	</div>
 
 </div>
 
